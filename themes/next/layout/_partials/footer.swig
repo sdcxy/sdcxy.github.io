@@ -21,7 +21,8 @@
   {% endif %}
 </div>
 
-{% if theme.footer.powered %}
+<!-- 隐藏主题默认底部 -->
+<!--{% if theme.footer.powered %}
   <div class="powered-by">{#
   #}{{ __('footer.powered', '<a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a>') }}{#
 #}</div>
@@ -38,7 +39,7 @@
     #}NexT.{{ theme.scheme }}{#
   #}</a>{% if theme.footer.theme.version %} v{{ theme.version }}{% endif %}{#
 #}</div>
-{% endif %}
+{% endif %}-->
 
 {% if theme.footer.custom_text %}
   <div class="footer-custom">{#

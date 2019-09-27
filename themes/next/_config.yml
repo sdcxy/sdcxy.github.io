@@ -40,7 +40,7 @@ keywords: "Hexo, NexT"
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss:
+rss: /atom.xml
 
 footer:
   # Specify the date when the site was setup.
@@ -111,7 +111,7 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Mist
+scheme: Pisces
 #scheme: Mist
 #scheme: Pisces
 #scheme: Gemini
@@ -126,9 +126,9 @@ scheme: Mist
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-#social:
-  #GitHub: https://github.com/yourname || github
-  #E-Mail: mailto:yourname@gmail.com || envelope
+social:
+  GitHub: https://github.com/sdcxy || github
+  E-Mail: mailto:2378101302@qq.com || envelope
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
@@ -154,7 +154,7 @@ links_layout: block
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-#avatar: /images/avatar.gif
+avatar: /images/avatar.jpg
 
 # Table Of Contents in the Sidebar
 toc:
@@ -194,7 +194,7 @@ sidebar:
   b2t: false
 
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
   # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: false
@@ -531,9 +531,11 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  #<app_id>
+  app_id: ojndKHwM4k1qwxF1UUKPpVoM-gzGzoHsz
+  #<app_key>
+  app_key: EDQo1yQc9KyelM7JzSPOQhjB
 
 # Another tool to show number of visitors to each article.
 # visit https://console.firebase.google.com/u/0/ to get apiKey and projectId
@@ -695,7 +697,8 @@ pace: false
 pace_theme: pace-theme-minimal
 
 # Canvas-nest
-canvas_nest: false
+# Dependencies: https://github.com/theme-next/theme-next-canvas-nest
+canvas_nest: true
 
 # three_waves
 three_waves: false
