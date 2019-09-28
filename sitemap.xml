@@ -2,49 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.sdcxy.cn/commonweal/index.html</loc>
+    <loc>http://yoursite.com/2019/09/27/index/</loc>
     
-    <lastmod>2019-09-28T05:32:00.227Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.sdcxy.cn/2019/09/27/index/</loc>
-    
-    <lastmod>2019-09-28T05:29:05.561Z</lastmod>
+    <lastmod>2019-09-28T06:46:46.121Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.sdcxy.cn/music/index.html</loc>
+    <loc>http://yoursite.com/commonweal/index.html</loc>
+    
+    <lastmod>2019-09-28T06:17:52.016Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/index.html</loc>
+    
+    <lastmod>2019-09-28T06:17:02.672Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/categories/index.html</loc>
+    
+    <lastmod>2019-09-28T06:16:53.124Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/message/index.html</loc>
+    
+    <lastmod>2019-09-28T05:59:06.270Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/music/index.html</loc>
     
     <lastmod>2019-09-28T03:52:42.406Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.sdcxy.cn//404.html</loc>
+    <loc>http://yoursite.com//404.html</loc>
     
     <lastmod>2019-09-28T01:41:19.354Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.sdcxy.cn/categories/index.html</loc>
-    
-    <lastmod>2019-09-27T18:18:32.592Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.sdcxy.cn/tags/index.html</loc>
-    
-    <lastmod>2019-09-27T18:06:58.964Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.sdcxy.cn/README.html</loc>
+    <loc>http://yoursite.com/README.html</loc>
     
     <lastmod>2019-09-27T15:24:23.364Z</lastmod>
     

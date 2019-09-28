@@ -5,9 +5,9 @@
   <subtitle>学习知识要善于思考，思考，再思考 —— 爱因斯坦</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://www.sdcxy.cn/"/>
-  <updated>2019-09-28T05:29:05.561Z</updated>
-  <id>https://www.sdcxy.cn/</id>
+  <link href="http://yoursite.com/"/>
+  <updated>2019-09-28T06:46:46.121Z</updated>
+  <id>http://yoursite.com/</id>
   
   <author>
     <name>sdcxy</name>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>网站介绍</title>
-    <link href="https://www.sdcxy.cn/2019/09/27/index/"/>
-    <id>https://www.sdcxy.cn/2019/09/27/index/</id>
+    <link href="http://yoursite.com/2019/09/27/index/"/>
+    <id>http://yoursite.com/2019/09/27/index/</id>
     <published>2019-09-27T02:45:24.000Z</published>
-    <updated>2019-09-28T05:29:05.561Z</updated>
+    <updated>2019-09-28T06:46:46.121Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
     
@@ -35,6 +35,10 @@
     </summary>
     
     
+      <category term="简介" scheme="http://yoursite.com/categories/%E7%AE%80%E4%BB%8B/"/>
+    
+    
+      <category term="原创" scheme="http://yoursite.com/tags/%E5%8E%9F%E5%88%9B/"/>
     
   </entry>
   
