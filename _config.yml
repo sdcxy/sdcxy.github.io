@@ -4,12 +4,12 @@
 
 # Site
 title: 今天学习了吗?
-subtitle:
-description:
+subtitle: 学习知识要善于思考，思考，再思考 —— 爱因斯坦
+description: Java/Vue.js学习笔记
 keywords:
 author: sdcxy
 language: zh-Hans
-timezone:
+timezone:  Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -84,8 +84,29 @@ deploy:
 
 # Extensions
 ## Plugins: http://hexo.io/plugins/
+plugins: hexo-generate-feed
+#Feed Atom
 feed:
   type: atom
   path: atom.xml
   limit: 20
-plugins: hexo-generate-feed
+# 设置每篇文章的阅读时长和字数
+symbols_count_time:
+  #文章内是否显示
+  symbols: true
+  time: true
+  # 网页底部是否显示
+  total_symbols: true
+  total_time: true
+
+# Search 搜索
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 1000
+
+# 音乐播放器
+aplayer:
+  meting: true
+
