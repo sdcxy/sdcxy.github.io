@@ -8,7 +8,7 @@
       <link href="/2019/09/27/index/"/>
       <url>/2019/09/27/index/</url>
       
-        <content type="html"><![CDATA[<ol><li>设置主题风格<ul><li>打开 themes/next/_config.yml 文件，搜索  scheme 关键字，将你需用启用的 scheme 前面注释 # 去除即可</li></ul></li></ol>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol><li>设置主题风格<ul><li>打开 themes/next/_config.yml 文件，搜索  scheme 关键字，将你需用启用的 scheme 前面注释 # 去除即可</li></ul></li></ol><p><a href="http://music.163.com/song/media/outer/url?id=29567189.mp3" target="_blank" rel="noopener">http://music.163.com/song/media/outer/url?id=29567189.mp3</a></p>]]></content>
       
       
       

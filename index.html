@@ -216,6 +216,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-music">
+          <a href="/music/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-music"></i> <br>
+            
+            音乐
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-commonweal">
           <a href="/404/" rel="section">
             
@@ -335,6 +345,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/09/27/index/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/09/27/index/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -364,7 +384,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  36
+                  47
                 </span>
               
 
@@ -409,6 +429,7 @@
 </ul>
 </li>
 </ol>
+<p><a href="http://music.163.com/song/media/outer/url?id=29567189.mp3" target="_blank" rel="noopener">http://music.163.com/song/media/outer/url?id=29567189.mp3</a></p>
 
           
         
@@ -573,7 +594,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">36</span>
+    <span title="Site words total count">47</span>
   
 </div>
 
@@ -739,6 +760,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: true,
+        appId: 'ojndKHwM4k1qwxF1UUKPpVoM-gzGzoHsz',
+        appKey: 'EDQo1yQc9KyelM7JzSPOQhjB',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

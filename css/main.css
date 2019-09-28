@@ -1972,7 +1972,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7cffb3;
+  background: #fca7e5;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3146,4 +3146,13 @@ img:hover {
   padding: 25px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+.content-wrap {
+  border-radius: 10px;
+}
+.header-inner {
+  border-radius: 10px;
+}
+.sidebar-inner {
+  border-radius: 10px;
 }
