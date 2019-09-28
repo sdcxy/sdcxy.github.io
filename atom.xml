@@ -5,9 +5,9 @@
   <subtitle>学习知识要善于思考，思考，再思考 —— 爱因斯坦</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2019-09-28T03:21:26.091Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="https://www.sdcxy.cn/"/>
+  <updated>2019-09-28T05:29:05.561Z</updated>
+  <id>https://www.sdcxy.cn/</id>
   
   <author>
     <name>sdcxy</name>
@@ -17,13 +17,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>hexo next主题优化配置说明</title>
-    <link href="http://yoursite.com/2019/09/27/index/"/>
-    <id>http://yoursite.com/2019/09/27/index/</id>
+    <title>网站介绍</title>
+    <link href="https://www.sdcxy.cn/2019/09/27/index/"/>
+    <id>https://www.sdcxy.cn/2019/09/27/index/</id>
     <published>2019-09-27T02:45:24.000Z</published>
-    <updated>2019-09-28T03:21:26.091Z</updated>
+    <updated>2019-09-28T05:29:05.561Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><ol><li>设置主题风格<ul><li>打开 themes/next/_config.yml 文件，搜索  scheme 关键字，将你需用启用的 scheme 前面注释 # 去除即可</li></ul></li></ol><p><a href="http://music.163.com/song/media/outer/url?id=29567189.mp3" target="_blank" rel="noopener">http://music.163.com/song/media/outer/url?id=29567189.mp3</a></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
     
     <summary type="html">
     
