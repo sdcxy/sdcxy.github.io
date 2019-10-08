@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.sdcxy.cn/"/>
-  <updated>2019-10-08T07:05:06.832Z</updated>
+  <updated>2019-10-08T08:05:50.096Z</updated>
   <id>https://www.sdcxy.cn/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linux学习笔记三</title>
+    <link href="https://www.sdcxy.cn/2019/10/08/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%89/"/>
+    <id>https://www.sdcxy.cn/2019/10/08/linux学习笔记三/</id>
+    <published>2019-10-08T08:00:46.000Z</published>
+    <updated>2019-10-08T08:05:50.096Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="linux-学习笔记-—-linux常用操作命令"><a href="#linux-学习笔记-—-linux常用操作命令" class="headerlink" title="linux 学习笔记  — linux常用操作命令"></a>linux 学习笔记  — linux常用操作命令</h1><a id="more"></a><p>转载博文链接：<a href="https://blog.csdn.net/lcgoing/article/details/86737110" target="_blank" rel="noopener">https://blog.csdn.net/lcgoing/article/details/86737110</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;linux-学习笔记-—-linux常用操作命令&quot;&gt;&lt;a href=&quot;#linux-学习笔记-—-linux常用操作命令&quot; class=&quot;headerlink&quot; title=&quot;linux 学习笔记  — linux常用操作命令&quot;&gt;&lt;/a&gt;linux 学习笔记  — linux常用操作命令&lt;/h1&gt;
+    
+    </summary>
+    
+    
+      <category term="linux随笔" scheme="https://www.sdcxy.cn/categories/linux%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="原创" scheme="https://www.sdcxy.cn/tags/%E5%8E%9F%E5%88%9B/"/>
+    
+  </entry>
   
   <entry>
     <title>linux学习笔记二</title>
