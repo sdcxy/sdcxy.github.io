@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.sdcxy.cn/"/>
-  <updated>2019-09-28T15:45:05.811Z</updated>
+  <updated>2019-10-08T07:05:06.832Z</updated>
   <id>https://www.sdcxy.cn/</id>
   
   <author>
@@ -17,9 +17,32 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>linux学习笔记二</title>
+    <link href="https://www.sdcxy.cn/2019/10/08/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%BA%8C/"/>
+    <id>https://www.sdcxy.cn/2019/10/08/linux学习笔记二/</id>
+    <published>2019-10-08T03:53:44.000Z</published>
+    <updated>2019-10-08T07:05:06.832Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="linux-学习笔记-—-node-js环境配置"><a href="#linux-学习笔记-—-node-js环境配置" class="headerlink" title="linux 学习笔记  — node.js环境配置"></a>linux 学习笔记  — node.js环境配置</h1><a id="more"></a><ol><li><p>下载node.js</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">https://nodejs.org/en/download/ 点击Linux Binaries (x64) 64-bit下载</span><br><span class="line">版本为 node-v10.16.3-linux-x64.tar.xz</span><br></pre></td></tr></table></figure></li><li><p>拷贝node-v10.16.3-linux-x64.tar.xz到服务器上,然后解压</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">xz -d node-v10.16.3-linux-x64.tar.xz 将tar.xz解压为tar</span><br><span class="line">tar -xvf node-v10.16.3-linux-x64.tar 解压tar文件</span><br><span class="line">mv node-v10.16.3-linux-x64 node-v10.16.3 修改文件名称为 node-v10.16.3</span><br></pre></td></tr></table></figure></li><li><p>检查解压之后是否正常</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">在目录 node_v10.16.3/bin/下 输入 ./node -v 能显示版本</span><br><span class="line">在大环境下输入 node -v 显示:  bash: node: command not fount</span><br></pre></td></tr></table></figure></li><li><p>配置软链接,设置全局命令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">执行一下命令：</span><br><span class="line">ln -s /root/..../node-v10.16.3/bin/node /usr/bin/node</span><br><span class="line">ln -s /root/..../node-v10.16.3/bin/npm  /usr/bin/npm</span><br><span class="line">ln -s /root/..../node-v10.16.3/bin/npx  /usr/bin/npx</span><br></pre></td></tr></table></figure><p> <img src="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/linux-Nodejs%E9%85%8D%E7%BD%AE-%E5%85%A8%E5%B1%80%E6%9F%A5%E7%9C%8B%E7%89%88%E6%9C%AC.png" alt="logo"></p></li><li><p>配置node_global 和 node_cache</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">在自定义的目录下创建这两个文件夹</span><br><span class="line">例如： 目录 /root/.../node_js/</span><br><span class="line">    mkdir node_global</span><br><span class="line">    mkdir node_cache</span><br><span class="line">配置：</span><br><span class="line">npm config set prefix &quot;node_global&quot;</span><br><span class="line">npm config set cache &quot;node_cache&quot;</span><br><span class="line">查看配置:</span><br><span class="line">npm config ls</span><br><span class="line">查看所有配置（包含默认配置）</span><br><span class="line">npm config ls -l</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/linux-Nodejsc%E9%85%8D%E7%BD%AE-%E5%85%A8%E5%B1%80%E4%B8%8B%E8%BD%BD%E8%B7%AF%E5%BE%84%E5%92%8C%E7%BC%93%E5%AD%98%E8%B7%AF%E5%BE%84.png" alt></p></li><li><p>npm国内速度太慢 更新为淘宝镜像</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">使用淘宝镜像cnpm:</span><br><span class="line">npm install cnpm -g --registry=https://registry.npm.taobao.org</span><br><span class="line">还是要跟第4步骤一样配置cnpm软链接(全局配置) 查看版本和配置方式与上面一致</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;linux-学习笔记-—-node-js环境配置&quot;&gt;&lt;a href=&quot;#linux-学习笔记-—-node-js环境配置&quot; class=&quot;headerlink&quot; title=&quot;linux 学习笔记  — node.js环境配置&quot;&gt;&lt;/a&gt;linux 学习笔记  — node.js环境配置&lt;/h1&gt;
+    
+    </summary>
+    
+    
+      <category term="linux随笔" scheme="https://www.sdcxy.cn/categories/linux%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="原创" scheme="https://www.sdcxy.cn/tags/%E5%8E%9F%E5%88%9B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>linux学习笔记</title>
-    <link href="https://www.sdcxy.cn/2019/09/28/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%80/"/>
-    <id>https://www.sdcxy.cn/2019/09/28/linux学习笔记-一/</id>
+    <link href="https://www.sdcxy.cn/2019/09/28/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80/"/>
+    <id>https://www.sdcxy.cn/2019/09/28/linux学习笔记一/</id>
     <published>2019-09-28T14:31:35.000Z</published>
     <updated>2019-09-28T15:45:05.811Z</updated>
     
