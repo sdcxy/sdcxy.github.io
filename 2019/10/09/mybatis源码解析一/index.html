@@ -87,18 +87,20 @@
 
 
 
-<meta name="description" content="网站介绍">
+<meta name="description" content="mybatis 源码解析  — 传统的JDBC实现方式">
 <meta name="keywords" content="原创">
 <meta property="og:type" content="article">
-<meta property="og:title" content="网站介绍">
-<meta property="og:url" content="https://www.sdcxy.cn/2019/09/27/index/index.html">
+<meta property="og:title" content="mybatis源码解析一">
+<meta property="og:url" content="https://www.sdcxy.cn/2019/10/09/mybatis源码解析一/index.html">
 <meta property="og:site_name" content="今天学习了吗?">
-<meta property="og:description" content="网站介绍">
+<meta property="og:description" content="mybatis 源码解析  — 传统的JDBC实现方式">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-08T07:09:40.377Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90-%E4%BC%A0%E7%BB%9FJDBC%E5%AE%9E%E7%8E%B0-%E5%BC%95%E5%85%A5mysql%E4%BE%9D%E8%B5%96.png">
+<meta property="og:updated_time" content="2019-10-09T11:32:22.132Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="网站介绍">
-<meta name="twitter:description" content="网站介绍">
+<meta name="twitter:title" content="mybatis源码解析一">
+<meta name="twitter:description" content="mybatis 源码解析  — 传统的JDBC实现方式">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90-%E4%BC%A0%E7%BB%9FJDBC%E5%AE%9E%E7%8E%B0-%E5%BC%95%E5%85%A5mysql%E4%BE%9D%E8%B5%96.png">
 
 
 
@@ -128,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="https://www.sdcxy.cn/2019/09/27/index/">
+  <link rel="canonical" href="https://www.sdcxy.cn/2019/10/09/mybatis源码解析一/">
 
 
 
 
 
-  <title>网站介绍 | 今天学习了吗?</title>
+  <title>mybatis源码解析一 | 今天学习了吗?</title>
   
 
 
@@ -304,7 +306,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.sdcxy.cn/2019/09/27/index/">
+    <link itemprop="mainEntityOfPage" href="https://www.sdcxy.cn/2019/10/09/mybatis源码解析一/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="sdcxy">
@@ -321,7 +323,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">网站介绍</h1>
+          <h1 class="post-title" itemprop="name headline">mybatis源码解析一</h1>
         
 
         <div class="post-meta">
@@ -333,8 +335,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-27T10:45:24+08:00">
-                2019-09-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-09T15:28:00+08:00">
+                2019-10-09
               </time>
             
 
@@ -356,8 +358,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/简介/" itemprop="url" rel="index">
-                    <span itemprop="name">简介</span>
+                  <a href="/categories/mybatis/" itemprop="url" rel="index">
+                    <span itemprop="name">mybatis</span>
                   </a>
                 </span>
 
@@ -374,8 +376,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/09/27/index/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/09/27/index/" itemprop="commentCount"></span>
+                <a href="/2019/10/09/mybatis源码解析一/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/10/09/mybatis源码解析一/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -383,7 +385,7 @@
 
           
           
-             <span id="/2019/09/27/index/" class="leancloud_visitors" data-flag-title="网站介绍">
+             <span id="/2019/10/09/mybatis源码解析一/" class="leancloud_visitors" data-flag-title="mybatis源码解析一">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -408,7 +410,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  8字
+                  700字
                 </span>
               
 
@@ -424,7 +426,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1分钟
+                  3分钟
                 </span>
               
             </div>
@@ -445,8 +447,33 @@
       
 
       
-        <h1 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h1><a id="more"></a>
-<p><a href="https://github.com/sdcxy" target="_blank" rel="noopener">https://github.com/sdcxy</a></p>
+        <h1 id="mybatis-源码解析-—-传统的JDBC实现方式"><a href="#mybatis-源码解析-—-传统的JDBC实现方式" class="headerlink" title="mybatis 源码解析  — 传统的JDBC实现方式"></a>mybatis 源码解析  — 传统的JDBC实现方式</h1><a id="more"></a>
+<ol>
+<li><p>创建Maven工程，引入mysql依赖、lombok依赖(自动get/set)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">   &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line">   &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line">   &lt;version&gt;5.1.47&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.projectlombok&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;lombok&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;1.18.8&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90-%E4%BC%A0%E7%BB%9FJDBC%E5%AE%9E%E7%8E%B0-%E5%BC%95%E5%85%A5mysql%E4%BE%9D%E8%B5%96.png" alt></p>
+</li>
+<li><p>准备数据库数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">创建数据库</span><br><span class="line">CREATE DATABASE `mybatis`</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">创建表 sys_user</span><br><span class="line">DROP TABLE IF EXISTS `sys_user`;</span><br><span class="line">CREATE TABLE `sys_user`  (</span><br><span class="line">  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT &apos;主键&apos;,</span><br><span class="line">  `username` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT &apos;用户名&apos;,</span><br><span class="line">  `age` int(11) NULL DEFAULT NULL COMMENT &apos;年龄&apos;,</span><br><span class="line">  `telephone` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT &apos;电话号码&apos;,</span><br><span class="line">  `remark` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT &apos;备注&apos;,</span><br><span class="line">  PRIMARY KEY (`id`) USING BTREE</span><br><span class="line">) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;</span><br><span class="line"></span><br><span class="line">SET FOREIGN_KEY_CHECKS = 1;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">插入测试数据</span><br><span class="line">INSERT INTO `sys_user` VALUES (1, &apos;小明&apos;, 18, &apos;13800138000&apos;, &apos;测试数据&apos;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建测试类JDBCTest和实体类User</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">实体类 User</span><br><span class="line">package com.github.sdcxy.entity;</span><br><span class="line"></span><br><span class="line">import lombok.Data;</span><br><span class="line"></span><br><span class="line">@Data</span><br><span class="line">public class User &#123;</span><br><span class="line"></span><br><span class="line">    private int id;</span><br><span class="line"></span><br><span class="line">    private String username;</span><br><span class="line"></span><br><span class="line">    private int age;</span><br><span class="line"></span><br><span class="line">    private String telephone;</span><br><span class="line"></span><br><span class="line">    private String remark;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line">测试类JDBCTest</span><br><span class="line">package com.github.sdcxy.jdbc;</span><br><span class="line"></span><br><span class="line">import com.github.sdcxy.entity.User;</span><br><span class="line"></span><br><span class="line">import java.sql.*;</span><br><span class="line"></span><br><span class="line">public class JDBCTest &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line"></span><br><span class="line">        Connection connection = null;</span><br><span class="line">        PreparedStatement preparedStatement = null;</span><br><span class="line">        ResultSet resultSet = null;</span><br><span class="line">        // 创建一个User对象来接收查询结果</span><br><span class="line">        User user = new User();</span><br><span class="line">        try&#123;</span><br><span class="line">            //加载驱动</span><br><span class="line">            Class.forName(&quot;com.mysql.jdbc.Driver&quot;);</span><br><span class="line">            // 设置数据库源</span><br><span class="line">            String url = &quot;jdbc:mysql://localhost:3306/mybatis?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&quot;;</span><br><span class="line">            String username = &quot;root&quot;;</span><br><span class="line">            String password = &quot;root&quot;;</span><br><span class="line">            // 获取数据库链接</span><br><span class="line">            connection = DriverManager.getConnection(url,username,password);</span><br><span class="line">            // 查询数据库语句</span><br><span class="line">            String sql = &quot;select * from sys_user where id=?&quot;;</span><br><span class="line">            // 查询数据库</span><br><span class="line">            preparedStatement = connection.prepareStatement(sql);</span><br><span class="line">            preparedStatement.setInt(1,1);</span><br><span class="line">            // 获得结果集</span><br><span class="line">            resultSet = preparedStatement.executeQuery();</span><br><span class="line">            // 遍历结果集</span><br><span class="line">            while (resultSet.next()) &#123;</span><br><span class="line">                user.setId(resultSet.getInt(&quot;id&quot;));</span><br><span class="line">                user.setUsername(resultSet.getString(&quot;username&quot;));</span><br><span class="line">                user.setAge(resultSet.getInt(&quot;age&quot;));</span><br><span class="line">                user.setTelephone(resultSet.getString(&quot;telephone&quot;));</span><br><span class="line">                user.setRemark(resultSet.getString(&quot;remark&quot;));</span><br><span class="line">            &#125;</span><br><span class="line">            System.out.println(</span><br><span class="line">                    &quot;&#123;&quot;+&quot;id:&quot; + user.getId()+&quot;,&quot;</span><br><span class="line">                       +&quot;username:&quot;+user.getUsername()+&quot;,&quot;</span><br><span class="line">                       +&quot;age:&quot;+user.getAge()+&quot;,&quot;</span><br><span class="line">                       +&quot;telephone:&quot;+user.getTelephone()+&quot;,&quot;</span><br><span class="line">                       +&quot;remark:&quot;+user.getRemark() +&quot;&#125;&quot;</span><br><span class="line">                    );</span><br><span class="line">        &#125; catch (ClassNotFoundException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; catch (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;finally &#123;</span><br><span class="line">            close(connection,preparedStatement,resultSet);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    private static void close(Connection connection,PreparedStatement preparedStatement,ResultSet resultSet)&#123;</span><br><span class="line">            try&#123;</span><br><span class="line">                if (resultSet != null) &#123;</span><br><span class="line">                    resultSet.close();</span><br><span class="line">                &#125;</span><br><span class="line">                if (preparedStatement != null) &#123;</span><br><span class="line">                    preparedStatement.close();</span><br><span class="line">                &#125;</span><br><span class="line">                if (connection != null) &#123;</span><br><span class="line">                    connection.close();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; catch (SQLException e) &#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line">执行结果：</span><br><span class="line">&#123;id:1,username:小明,age:18,telephone:13800138000,remark:测试数据&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>JDBC实现方式的弊端</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1、加载驱动硬编码的方式</span><br><span class="line">2、sql语句与代码耦合,不利于代码的开发维护</span><br><span class="line">3、每次都需要链接和关闭，消耗很大的资源</span><br><span class="line">4、结果集中的数据类型需要手动判断</span><br><span class="line">5、sql语句硬编码的方式，不利于开发</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>源码地址：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/sdcxy/parse_source_code</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
 
       
     </div>
@@ -504,7 +531,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://www.sdcxy.cn/2019/09/27/index/" title="网站介绍">https://www.sdcxy.cn/2019/09/27/index/</a>
+    <a href="https://www.sdcxy.cn/2019/10/09/mybatis源码解析一/" title="mybatis源码解析一">https://www.sdcxy.cn/2019/10/09/mybatis源码解析一/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -543,14 +570,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/10/08/linux学习笔记四/" rel="next" title="linux学习笔记四">
+                <i class="fa fa-chevron-left"></i> linux学习笔记四
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/09/28/linux学习笔记一/" rel="prev" title="linux学习笔记一">
-                linux学习笔记一 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/10/09/mybatis源码解析二/" rel="prev" title="mybatis源码解析二">
+                mybatis源码解析二 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -711,7 +742,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#网站介绍"><span class="nav-number">1.</span> <span class="nav-text">网站介绍</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#mybatis-源码解析-—-传统的JDBC实现方式"><span class="nav-number">1.</span> <span class="nav-text">mybatis 源码解析  — 传统的JDBC实现方式</span></a></li></ol></div>
             
 
           </div>

@@ -87,18 +87,23 @@
 
 
 
-<meta name="description" content="网站介绍">
+<meta name="description" content="mybatis 源码解析  — mybatis开始使用">
 <meta name="keywords" content="原创">
 <meta property="og:type" content="article">
-<meta property="og:title" content="网站介绍">
-<meta property="og:url" content="https://www.sdcxy.cn/2019/09/27/index/index.html">
+<meta property="og:title" content="mybatis源码解析二">
+<meta property="og:url" content="https://www.sdcxy.cn/2019/10/09/mybatis源码解析二/index.html">
 <meta property="og:site_name" content="今天学习了吗?">
-<meta property="og:description" content="网站介绍">
+<meta property="og:description" content="mybatis 源码解析  — mybatis开始使用">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-08T07:09:40.377Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90-mybatis%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8-mybatis-config%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90-mybatis%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8-UerMapper.xml.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90-mybatis%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8-%E4%BB%8Exml%E4%B8%AD%E6%9E%84%E5%BB%BASqlSessionFactory.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90-mybatis%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8-%E4%BB%8ESqlSessionFactory%E8%8E%B7%E5%8F%96SqlSession.png">
+<meta property="og:updated_time" content="2019-10-09T16:58:13.977Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="网站介绍">
-<meta name="twitter:description" content="网站介绍">
+<meta name="twitter:title" content="mybatis源码解析二">
+<meta name="twitter:description" content="mybatis 源码解析  — mybatis开始使用">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90-mybatis%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8-mybatis-config%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE.png">
 
 
 
@@ -128,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="https://www.sdcxy.cn/2019/09/27/index/">
+  <link rel="canonical" href="https://www.sdcxy.cn/2019/10/09/mybatis源码解析二/">
 
 
 
 
 
-  <title>网站介绍 | 今天学习了吗?</title>
+  <title>mybatis源码解析二 | 今天学习了吗?</title>
   
 
 
@@ -304,7 +309,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.sdcxy.cn/2019/09/27/index/">
+    <link itemprop="mainEntityOfPage" href="https://www.sdcxy.cn/2019/10/09/mybatis源码解析二/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="sdcxy">
@@ -321,7 +326,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">网站介绍</h1>
+          <h1 class="post-title" itemprop="name headline">mybatis源码解析二</h1>
         
 
         <div class="post-meta">
@@ -333,8 +338,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-27T10:45:24+08:00">
-                2019-09-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-09T23:52:17+08:00">
+                2019-10-09
               </time>
             
 
@@ -356,8 +361,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/简介/" itemprop="url" rel="index">
-                    <span itemprop="name">简介</span>
+                  <a href="/categories/mybatis/" itemprop="url" rel="index">
+                    <span itemprop="name">mybatis</span>
                   </a>
                 </span>
 
@@ -374,8 +379,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/09/27/index/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/09/27/index/" itemprop="commentCount"></span>
+                <a href="/2019/10/09/mybatis源码解析二/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/10/09/mybatis源码解析二/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -383,7 +388,7 @@
 
           
           
-             <span id="/2019/09/27/index/" class="leancloud_visitors" data-flag-title="网站介绍">
+             <span id="/2019/10/09/mybatis源码解析二/" class="leancloud_visitors" data-flag-title="mybatis源码解析二">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -408,7 +413,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  8字
+                  784字
                 </span>
               
 
@@ -424,7 +429,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1分钟
+                  4分钟
                 </span>
               
             </div>
@@ -445,8 +450,26 @@
       
 
       
-        <h1 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h1><a id="more"></a>
-<p><a href="https://github.com/sdcxy" target="_blank" rel="noopener">https://github.com/sdcxy</a></p>
+        <h1 id="mybatis-源码解析-—-mybatis开始使用"><a href="#mybatis-源码解析-—-mybatis开始使用" class="headerlink" title="mybatis 源码解析  — mybatis开始使用"></a>mybatis 源码解析  — mybatis开始使用</h1><a id="more"></a>
+<h3 id="什么是mybatis"><a href="#什么是mybatis" class="headerlink" title="什么是mybatis"></a>什么是mybatis</h3><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">MyBatis 是一款优秀的持久层框架，它支持定制化 SQL、存储过程以及高级映射。</span><br><span class="line">MyBatis 避免了几乎所有的 JDBC 代码和手动设置参数以及获取结果集。</span><br><span class="line">MyBatis 可以使用简单的 XML 或注解来配置和映射原生类型、接口和 Java 的 POJO（Plain Old Java Objects，普通老式 Java 对象）为数据库中的记录。</span><br></pre></td></tr></table></figure></code></pre><h4 id="使用读取XML文件的方式"><a href="#使用读取XML文件的方式" class="headerlink" title="使用读取XML文件的方式"></a>使用读取XML文件的方式</h4><ol>
+<li><p>开始使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">查看官网说明：https://mybatis.org/mybatis-3/zh/getting-started.html</span><br><span class="line">引入mybatis依赖</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.mybatis&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;mybatis&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;3.5.2&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在resources新建一个mybatis-config.xml全局配置文件<br>根据官网的说明：需要配置数据源<br><img src="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90-mybatis%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8-mybatis-config%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE.png" alt></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">mybatis-config.xml配置如下：</span><br><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span><br><span class="line">&lt;!DOCTYPE configuration</span><br><span class="line">        PUBLIC &quot;-//mybatis.org//DTD Config 3.0//EN&quot;</span><br><span class="line">        &quot;http://mybatis.org/dtd/mybatis-3-config.dtd&quot;&gt;</span><br><span class="line">&lt;configuration&gt;</span><br><span class="line">    &lt;properties&gt;</span><br><span class="line">        &lt;property name=&quot;driver&quot; value=&quot;com.mysql.jdbc.Driver&quot;/&gt;</span><br><span class="line">        &lt;property name=&quot;url&quot; value=&quot;jdbc:mysql://localhost:3306/mybatis?useUnicode=true&amp;amp;characterEncoding=utf8&amp;amp;useSSL=false&quot;/&gt;</span><br><span class="line">        &lt;property name=&quot;username&quot; value=&quot;root&quot;/&gt;</span><br><span class="line">        &lt;property name=&quot;password&quot; value=&quot;root&quot;/&gt;</span><br><span class="line">    &lt;/properties&gt;</span><br><span class="line">    &lt;environments default=&quot;development&quot;&gt;</span><br><span class="line">        &lt;environment id=&quot;development&quot;&gt;</span><br><span class="line">            &lt;transactionManager type=&quot;JDBC&quot;/&gt;</span><br><span class="line">            &lt;dataSource type=&quot;POOLED&quot;&gt;</span><br><span class="line">                &lt;property name=&quot;driver&quot; value=&quot;$&#123;driver&#125;&quot;/&gt;</span><br><span class="line">                &lt;property name=&quot;url&quot; value=&quot;$&#123;url&#125;&quot;/&gt;</span><br><span class="line">                &lt;property name=&quot;username&quot; value=&quot;$&#123;username&#125;&quot;/&gt;</span><br><span class="line">                &lt;property name=&quot;password&quot; value=&quot;$&#123;password&#125;&quot;/&gt;</span><br><span class="line">            &lt;/dataSource&gt;</span><br><span class="line">        &lt;/environment&gt;</span><br><span class="line">    &lt;/environments&gt;</span><br><span class="line">    &lt;mappers&gt;</span><br><span class="line">        &lt;mapper resource=&quot;UserMapper.xml&quot;/&gt;</span><br><span class="line">    &lt;/mappers&gt;</span><br><span class="line">&lt;/configuration&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>根据官方文档，还需要创建一个UserMapper.xml<br><img src="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90-mybatis%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8-UerMapper.xml.png" alt></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">UserMapper.xml文件:</span><br><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span><br><span class="line">&lt;!DOCTYPE mapper</span><br><span class="line">        PUBLIC &quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span><br><span class="line">        &quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;&gt;</span><br><span class="line">&lt;mapper namespace=&quot;com.github.sdcxy.mybatis.mapper.UserMapper&quot;&gt;</span><br><span class="line">    &lt;select id=&quot;selectUser&quot; resultType=&quot;com.github.sdcxy.entity.User&quot;&gt;</span><br><span class="line">    select * from sys_user where id = #&#123;id&#125;</span><br><span class="line">  &lt;/select&gt;</span><br><span class="line">&lt;/mapper&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>新建一个com.github.sdcxy.mybatis.mapper.UserMapper接口类</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">接口方法与xml配置文件id名称一致</span><br><span class="line">package com.github.sdcxy.mybatis.mapper;</span><br><span class="line"></span><br><span class="line">import com.github.sdcxy.entity.User;</span><br><span class="line"></span><br><span class="line">public interface UserMapper &#123;</span><br><span class="line"></span><br><span class="line">    User selectUser(int id);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>新建mybatis测试类<br><img src="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90-mybatis%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8-%E4%BB%8Exml%E4%B8%AD%E6%9E%84%E5%BB%BASqlSessionFactory.png" alt><br><img src="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90-mybatis%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8-%E4%BB%8ESqlSessionFactory%E8%8E%B7%E5%8F%96SqlSession.png" alt></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">package com.github.sdcxy.mybatis;</span><br><span class="line"></span><br><span class="line">import com.github.sdcxy.entity.User;</span><br><span class="line">import com.github.sdcxy.mybatis.mapper.UserMapper;</span><br><span class="line">import org.apache.ibatis.io.Resources;</span><br><span class="line">import org.apache.ibatis.session.SqlSession;</span><br><span class="line">import org.apache.ibatis.session.SqlSessionFactory;</span><br><span class="line">import org.apache.ibatis.session.SqlSessionFactoryBuilder;</span><br><span class="line"></span><br><span class="line">import java.io.IOException;</span><br><span class="line">import java.io.InputStream;</span><br><span class="line"></span><br><span class="line">public class MybatisTest &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        // 读取xml文件的方式</span><br><span class="line">        readXmlMethod();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private static void readXmlMethod()&#123;</span><br><span class="line">        try&#123;</span><br><span class="line">            // 获取全局配置路径</span><br><span class="line">            String resource = &quot;mybatis-config.xml&quot;;</span><br><span class="line">            // 使用Resources.getResourceAsStream加载全局配置文件</span><br><span class="line">            InputStream inputStream = Resources.getResourceAsStream(resource);</span><br><span class="line">            // 调用SqlSessionFactoryBuilder()方法构建读取到的数据源信息</span><br><span class="line">            SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);</span><br><span class="line">            // 调用SqlSessionFactory.openSession()方法获取到SqlSession对象</span><br><span class="line">            SqlSession session = sqlSessionFactory.openSession();</span><br><span class="line">            // 加载UserMapper到session Mapper中</span><br><span class="line">            UserMapper userMapper = session.getMapper(UserMapper.class);</span><br><span class="line">            // 调用方法返回User对象</span><br><span class="line">            User user = userMapper.selectUser(1);</span><br><span class="line">            System.out.println(user);</span><br><span class="line">        &#125; catch (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">结果返回：</span><br><span class="line">User(id=1, username=小明, age=18, telephone=13800138000, remark=测试数据)</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
 
       
     </div>
@@ -504,7 +527,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://www.sdcxy.cn/2019/09/27/index/" title="网站介绍">https://www.sdcxy.cn/2019/09/27/index/</a>
+    <a href="https://www.sdcxy.cn/2019/10/09/mybatis源码解析二/" title="mybatis源码解析二">https://www.sdcxy.cn/2019/10/09/mybatis源码解析二/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -543,15 +566,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/10/09/mybatis源码解析一/" rel="next" title="mybatis源码解析一">
+                <i class="fa fa-chevron-left"></i> mybatis源码解析一
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/09/28/linux学习笔记一/" rel="prev" title="linux学习笔记一">
-                linux学习笔记一 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -711,7 +734,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#网站介绍"><span class="nav-number">1.</span> <span class="nav-text">网站介绍</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#mybatis-源码解析-—-mybatis开始使用"><span class="nav-number">1.</span> <span class="nav-text">mybatis 源码解析  — mybatis开始使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是mybatis"><span class="nav-number">1.0.1.</span> <span class="nav-text">什么是mybatis</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#使用读取XML文件的方式"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">使用读取XML文件的方式</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
