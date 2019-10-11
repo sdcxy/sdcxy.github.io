@@ -99,7 +99,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90-mybatis%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8-UerMapper.xml.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90-mybatis%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8-%E4%BB%8Exml%E4%B8%AD%E6%9E%84%E5%BB%BASqlSessionFactory.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90-mybatis%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8-%E4%BB%8ESqlSessionFactory%E8%8E%B7%E5%8F%96SqlSession.png">
-<meta property="og:updated_time" content="2019-10-09T16:58:13.977Z">
+<meta property="og:updated_time" content="2019-10-09T17:03:39.403Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mybatis源码解析二">
 <meta name="twitter:description" content="mybatis 源码解析  — mybatis开始使用">
@@ -413,7 +413,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  784字
+                  793字
                 </span>
               
 
@@ -466,9 +466,9 @@
 </li>
 <li><p>新建mybatis测试类<br><img src="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90-mybatis%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8-%E4%BB%8Exml%E4%B8%AD%E6%9E%84%E5%BB%BASqlSessionFactory.png" alt><br><img src="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/mybatis%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90-mybatis%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8-%E4%BB%8ESqlSessionFactory%E8%8E%B7%E5%8F%96SqlSession.png" alt></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">package com.github.sdcxy.mybatis;</span><br><span class="line"></span><br><span class="line">import com.github.sdcxy.entity.User;</span><br><span class="line">import com.github.sdcxy.mybatis.mapper.UserMapper;</span><br><span class="line">import org.apache.ibatis.io.Resources;</span><br><span class="line">import org.apache.ibatis.session.SqlSession;</span><br><span class="line">import org.apache.ibatis.session.SqlSessionFactory;</span><br><span class="line">import org.apache.ibatis.session.SqlSessionFactoryBuilder;</span><br><span class="line"></span><br><span class="line">import java.io.IOException;</span><br><span class="line">import java.io.InputStream;</span><br><span class="line"></span><br><span class="line">public class MybatisTest &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        // 读取xml文件的方式</span><br><span class="line">        readXmlMethod();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private static void readXmlMethod()&#123;</span><br><span class="line">        try&#123;</span><br><span class="line">            // 获取全局配置路径</span><br><span class="line">            String resource = &quot;mybatis-config.xml&quot;;</span><br><span class="line">            // 使用Resources.getResourceAsStream加载全局配置文件</span><br><span class="line">            InputStream inputStream = Resources.getResourceAsStream(resource);</span><br><span class="line">            // 调用SqlSessionFactoryBuilder()方法构建读取到的数据源信息</span><br><span class="line">            SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);</span><br><span class="line">            // 调用SqlSessionFactory.openSession()方法获取到SqlSession对象</span><br><span class="line">            SqlSession session = sqlSessionFactory.openSession();</span><br><span class="line">            // 加载UserMapper到session Mapper中</span><br><span class="line">            UserMapper userMapper = session.getMapper(UserMapper.class);</span><br><span class="line">            // 调用方法返回User对象</span><br><span class="line">            User user = userMapper.selectUser(1);</span><br><span class="line">            System.out.println(user);</span><br><span class="line">        &#125; catch (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">结果返回：</span><br><span class="line">User(id=1, username=小明, age=18, telephone=13800138000, remark=测试数据)</span><br></pre></td></tr></table></figure>
-
-
 </li>
+<li><p>源码地址：</p>
+<pre><code>https://github.com/sdcxy/parse_source_code</code></pre></li>
 </ol>
 
       
@@ -576,6 +576,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2019/10/11/mybatis源码解析三/" rel="prev" title="mybatis源码解析三">
+                mybatis源码解析三 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -656,7 +660,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -768,7 +772,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">2.1k</span>
+    <span title="Site words total count">6.4k</span>
   
 </div>
 
