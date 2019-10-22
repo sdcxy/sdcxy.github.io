@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-flash.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="数据字典,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="今天学习了吗?" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="工作经验分享 — 数据字典">
+<meta name="keywords" content="数据字典">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据字典">
+<meta property="og:url" content="https://www.sdcxy.cn/2019/10/20/数据字典/index.html">
+<meta property="og:site_name" content="今天学习了吗?">
+<meta property="og:description" content="工作经验分享 — 数据字典">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E7%B1%BB.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8%E6%9C%8D%E5%8A%A1%E5%A4%84%E7%90%86%E7%B1%BB.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8%E6%A8%A1%E6%9D%BF%E5%AD%98%E6%94%BE%E4%BD%8D%E7%BD%AE.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6%E6%8A%80%E6%9C%AF.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8%E9%A6%96%E9%A1%B5.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8%E6%98%BE%E7%A4%BA%E9%A1%B5%E9%9D%A2.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8pdf%E9%A2%84%E8%A7%88%E9%A1%B5%E9%9D%A2.png">
+<meta property="og:updated_time" content="2019-10-22T08:17:12.823Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="数据字典">
+<meta name="twitter:description" content="工作经验分享 — 数据字典">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E7%B1%BB.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://www.sdcxy.cn/2019/10/20/数据字典/">
+
+
+
+
+
+  <title>数据字典 | 今天学习了吗?</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    <!-- 添加右上角样式 -->
+    <a href="https://github.com/sdcxy" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">今天学习了吗?</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">学习知识要善于思考，思考，再思考</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-message">
+          <a href="/message/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-comment"></i> <br>
+            
+            留言板
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-music">
+          <a href="/music/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-music"></i> <br>
+            
+            音乐
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.sdcxy.cn/2019/10/20/数据字典/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="sdcxy">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="今天学习了吗?">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">数据字典</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-20T14:55:34+08:00">
+                2019-10-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java工具类/" itemprop="url" rel="index">
+                    <span itemprop="name">java工具类</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/10/20/数据字典/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/10/20/数据字典/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2019/10/20/数据字典/" class="leancloud_visitors" data-flag-title="数据字典">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2.2k字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  10分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="工作经验分享-—-数据字典"><a href="#工作经验分享-—-数据字典" class="headerlink" title="工作经验分享 — 数据字典"></a>工作经验分享 — 数据字典</h1><a id="more"></a>
+<h3 id="数据字典（Data-Dictionary）"><a href="#数据字典（Data-Dictionary）" class="headerlink" title="数据字典（Data Dictionary）"></a>数据字典（Data Dictionary）</h3><ul>
+<li>因工作需要，将数据库表结构及注释生成数据字典，因此开发了一个该工具类。</li>
+</ul>
+<h4 id="1、什么是数据字典？"><a href="#1、什么是数据字典？" class="headerlink" title="1、什么是数据字典？"></a>1、什么是数据字典？</h4><ul>
+<li>数据字典是指对数据的数据项、数据结构、数据流、数据存储、处理逻辑等进行定义和描述，其目的是对数据流程图中的各个元素做出详细的说明，使用数据字典为简单的建模项目。<br>简而言之，数据字典其实就是描述数据的信息集合，是对系统中使用的所有数据元素的定义的集合。</li>
+<li>目前开发的这个工具功能比较简单,实现了Mysql、SqlServer、PostgreSQL、<br>Oracle、DB2 表结构和注释导出，生成Word/PDF/HTML格式</li>
+</ul>
+<h4 id="2、开发前准备"><a href="#2、开发前准备" class="headerlink" title="2、开发前准备"></a>2、开发前准备</h4><ol>
+<li>查找资料，查找相关的工具类</li>
+<li>搜集可能用到的常见数据库，主要用了Mysql/SqlServer/Oracle/DB2/PostgreSQL</li>
+<li>下载相关的数据库驱动包（这里使用的Maven构建来管理jar包）</li>
+</ol>
+<h4 id="3、如何实现"><a href="#3、如何实现" class="headerlink" title="3、如何实现"></a>3、如何实现</h4><ol>
+<li>使用Maven来管理项目</li>
+<li>使用Springboot+Freemarker模板来实现可视化和处理</li>
+<li>使用itextpdf工具来生成PDF文件</li>
+</ol>
+<h4 id="4、开始开发"><a href="#4、开始开发" class="headerlink" title="4、开始开发"></a>4、开始开发</h4><ol>
+<li>开发环境 jdk 1.8 </li>
+<li>开发工具 idea</li>
+<li>创建SpringBoot项目 data-dictionary</li>
+<li>引入依赖  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line">    &lt;properties&gt;</span><br><span class="line">        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;</span><br><span class="line">        &lt;maven.compiler.source&gt;1.8&lt;/maven.compiler.source&gt;</span><br><span class="line">        &lt;maven.compiler.target&gt;1.8&lt;/maven.compiler.target&gt;</span><br><span class="line">        &lt;!--工具类--&gt;</span><br><span class="line">        &lt;lombok.version&gt;1.18.8&lt;/lombok.version&gt;</span><br><span class="line">        &lt;alibaba.fastjson.version&gt;1.2.60&lt;/alibaba.fastjson.version&gt;</span><br><span class="line">        &lt;itextpdf.version&gt;5.5.13.1&lt;/itextpdf.version&gt;</span><br><span class="line">        &lt;itextpdf.xhtmlrenderer.version&gt;9.1.18&lt;/itextpdf.xhtmlrenderer.version&gt;</span><br><span class="line">        &lt;itextpdf.asian.version&gt;5.2.0&lt;/itextpdf.asian.version&gt;</span><br><span class="line">        &lt;itext.rtf.version&gt;2.1.7&lt;/itext.rtf.version&gt;</span><br><span class="line">        &lt;apache.lang3.version&gt;3.9&lt;/apache.lang3.version&gt;</span><br><span class="line">        &lt;!--数据库--&gt;</span><br><span class="line">        &lt;mysql.version&gt;5.1.47&lt;/mysql.version&gt;</span><br><span class="line">        &lt;mssql.jdbc.version&gt;7.2.2.jre8&lt;/mssql.jdbc.version&gt;</span><br><span class="line">        &lt;postgreSql.version&gt;42.2.8&lt;/postgreSql.version&gt;</span><br><span class="line">        &lt;oracle.version&gt;12.1.0.2&lt;/oracle.version&gt;</span><br><span class="line">    &lt;/properties&gt;</span><br><span class="line">&lt;!--这里使用springboot自动加载依赖的方式--&gt;</span><br><span class="line">     &lt;dependencyManagement&gt;</span><br><span class="line">        &lt;dependencies&gt;</span><br><span class="line">            &lt;dependency&gt;</span><br><span class="line">                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">                &lt;artifactId&gt;spring-boot-dependencies&lt;/artifactId&gt;</span><br><span class="line">                &lt;version&gt;2.1.6.RELEASE&lt;/version&gt;</span><br><span class="line">                &lt;type&gt;pom&lt;/type&gt;</span><br><span class="line">                &lt;scope&gt;import&lt;/scope&gt;</span><br><span class="line">            &lt;/dependency&gt;</span><br><span class="line">        &lt;/dependencies&gt;</span><br><span class="line">     &lt;/dependencyManagement&gt;         </span><br><span class="line">     &lt;dependencies&gt;</span><br><span class="line">         &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-boot-autoconfigure&lt;/artifactId&gt;</span><br><span class="line">         &lt;/dependency&gt;</span><br><span class="line">         &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-boot-configuration-processor&lt;/artifactId&gt;</span><br><span class="line">         &lt;/dependency&gt;</span><br><span class="line">         &lt;!--freemarker--&gt;</span><br><span class="line">         &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-boot-starter-freemarker&lt;/artifactId&gt;</span><br><span class="line">         &lt;/dependency&gt;</span><br><span class="line">         &lt;!--工具类--&gt;</span><br><span class="line">         &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.projectlombok&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;lombok&lt;/artifactId&gt;</span><br><span class="line">         &lt;/dependency&gt;</span><br><span class="line">         &lt;!-- https://mvnrepository.com/artifact/com.itextpdf/itextpdf --&gt;</span><br><span class="line">         &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;com.itextpdf&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;itextpdf&lt;/artifactId&gt;</span><br><span class="line">         &lt;/dependency&gt;</span><br><span class="line">         &lt;!-- https://mvnrepository.com/artifact/com.itextpdf/itext-asian --&gt;</span><br><span class="line">         &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;com.itextpdf&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;itext-asian&lt;/artifactId&gt;</span><br><span class="line">         &lt;/dependency&gt;</span><br><span class="line">         &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;com.alibaba&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;fastjson&lt;/artifactId&gt;</span><br><span class="line">         &lt;/dependency&gt;</span><br><span class="line">         &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.apache.commons&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;commons-lang3&lt;/artifactId&gt;</span><br><span class="line">         &lt;/dependency&gt;</span><br><span class="line">         &lt;!--数据库--&gt;</span><br><span class="line">         &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line">         &lt;/dependency&gt;</span><br><span class="line">         &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;com.microsoft.sqlserver&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;mssql-jdbc&lt;/artifactId&gt;</span><br><span class="line">         &lt;/dependency&gt;</span><br><span class="line">         &lt;!-- https://mvnrepository.com/artifact/org.postgresql/postgresql --&gt;</span><br><span class="line">         &lt;dependency&gt;</span><br><span class="line">             &lt;groupId&gt;org.postgresql&lt;/groupId&gt;</span><br><span class="line">             &lt;artifactId&gt;postgresql&lt;/artifactId&gt;</span><br><span class="line">             &lt;version&gt;$&#123;postgreSql.version&#125;&lt;/version&gt;</span><br><span class="line">         &lt;/dependency&gt;</span><br><span class="line">         &lt;dependency&gt;</span><br><span class="line">             &lt;groupId&gt;com.oracle&lt;/groupId&gt;</span><br><span class="line">             &lt;artifactId&gt;ojdbc7&lt;/artifactId&gt;</span><br><span class="line">             &lt;version&gt;$&#123;oracle.version&#125;&lt;/version&gt;</span><br><span class="line">         &lt;/dependency&gt;</span><br><span class="line">     &lt;/dependencies&gt;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h4 id="4、数据库连接"><a href="#4、数据库连接" class="headerlink" title="4、数据库连接"></a>4、数据库连接</h4><ol>
+<li><p>创建DataBaseConnectionFactory数据库连接工厂，每一个数据库各自实现连接。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public interface DataBaseConnectionFactory &#123;</span><br><span class="line">    // 获取数据库连接</span><br><span class="line">    Connection getConnection();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建一个抽象的AbstractDataBaseConnectionFactory连接类,实例化数据库配置类<br>DataDictionaryDataSource</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public abstract class AbstractDataBaseConnectionFactory implements DataBaseConnectionFactory&#123;</span><br><span class="line">    @Autowired</span><br><span class="line">    protected DataDictionaryDataSource dataSource;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建每个数据库对应的类实例，并且继承抽象类AbstractDataBaseConnectionFactory</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">*   MySqlConnection</span><br><span class="line">*   SqlServerConnection</span><br><span class="line">*   OracleConnection</span><br><span class="line">*   PostgreSqlConnection</span><br><span class="line">*   DB2Connection</span><br><span class="line">这里列举了MySqlConnection实例</span><br><span class="line">@Slf4j</span><br><span class="line">public class MySqlConnection extends AbstractDataBaseConnectionFactory &#123;</span><br><span class="line"></span><br><span class="line">    private Connection getConnection(String ip, int port, String dataBaseName, String username, String password) &#123;</span><br><span class="line">        Connection conn = null;</span><br><span class="line">        String url = DBUrl.MYSQL_URL.getUrl()</span><br><span class="line">                .replace(DataBaseConstants.IP,ip)</span><br><span class="line">                .replace(DataBaseConstants.PORT,String.valueOf(port))</span><br><span class="line">                .replace(DataBaseConstants.DATABASE,dataBaseName);</span><br><span class="line">        try&#123;</span><br><span class="line">            Class.forName(DBDriver.MYSQL_DRIVER.getDriverName());</span><br><span class="line">            Properties properties = new Properties();</span><br><span class="line">            properties.setProperty(&quot;user&quot;,username);</span><br><span class="line">            properties.setProperty(&quot;password&quot;,password);</span><br><span class="line">            properties.setProperty(&quot;remark&quot;,&quot;true&quot;);//设置可以获取remarks信息</span><br><span class="line">            properties.setProperty(&quot;useInformationSchema&quot;,&quot;true&quot;);//设置可以获取tables remarks信息</span><br><span class="line">            conn = DriverManager.getConnection(url,properties);</span><br><span class="line">//            conn = DriverManager.getConnection(url,username,password);</span><br><span class="line">            log.info(&quot;----------开始连接数据库----------&quot;);</span><br><span class="line">            if (conn.isClosed())&#123;</span><br><span class="line">                //</span><br><span class="line">               log.info(&quot;--------数据库关闭链接--------&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; catch (Exception e) &#123;</span><br><span class="line">            log.error(&quot;数据库链接异常:[&#123;&#125;]&quot;,e.getMessage());</span><br><span class="line">            throw new GlobalException(ExceptionEnum.MYSQL_CONNECTION_EXCEPTION.getCode(),ExceptionEnum.MYSQL_CONNECTION_EXCEPTION.getMsg());</span><br><span class="line">        &#125;</span><br><span class="line">        return conn;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public Connection getConnection()&#123;</span><br><span class="line">        return getConnection(dataSource.getIp(), dataSource.getPort(), dataSource.getDataBase(), dataSource.getUsername(), dataSource.getPassword());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E7%B1%BB.png" alt></p>
+<h4 id="5、获取数据库表结构信息"><a href="#5、获取数据库表结构信息" class="headerlink" title="5、获取数据库表结构信息"></a>5、获取数据库表结构信息</h4></li>
+</ol>
+<ul>
+<li><p>这里用到了JDK自带的java.sql.DatabaseMetaData接口类来获取数据库表结构信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">这个类在实际操作中是无法获取到SqlServer的REMARKS信息，返回都为null</span><br><span class="line">所以SqlServer另外通过查询语句来实现。</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>既然要用到这个接口，就要了解这个类如何实现：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">DatabaseMetaData 获取表信息：</span><br><span class="line">// 获取表信息</span><br><span class="line">ResultSet getTables(String catalog,String schemaPattern,String tableNamePattern,String[] types);   </span><br><span class="line">// 获取表主键信息</span><br><span class="line">ResultSet getPrimaryKeys(String catalog,String schema,String table);  </span><br><span class="line">//获取表索引信息</span><br><span class="line">ResultSet getIndexInfo(String catalog,String schema,String table,boolean unique,boolean approximate);</span><br><span class="line">//获取表列信息</span><br><span class="line">ResultSet getColumns(String catalog,String schemaPattern,String tableNamePattern,String columnNamePattern); </span><br><span class="line"></span><br><span class="line">String catalog：要获得表所在的编目。&quot;“”&quot;意味着没有任何编目，Null表示所有编目。</span><br><span class="line">String schema：要获得表所在的模式。&quot;“”&quot;意味着没有任何模式，Null表示所有模式。</span><br><span class="line">String tableName：指出要返回表名与该参数匹配的那些表，</span><br><span class="line">String types：一个指出返回何种表的数组。</span><br><span class="line">可能的数组项是：&quot;TABLE&quot;、&quot;VIEW&quot;、&quot;SYSTEM TABLE&quot;， &quot;GLOBAL TEMPORARY&quot;，&quot;LOCAL  TEMPORARY&quot;，&quot;ALIAS&quot;，&quot;SYSNONYM&quot;。</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建一个抽象的数据字典数据库处理类AbstractDataDictionary</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">1. 抽象类AbstractDataDictionary实现了DataDictionary接口 </span><br><span class="line">   来统一实现获取数据库表信息的方法，SQLServer除外。 </span><br><span class="line">public interface DataDictionary&lt;T&gt; &#123;</span><br><span class="line"></span><br><span class="line">    List&lt;T&gt; getTableInfo(String tableNames);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">2. 分别创建对应数据库的处理类</span><br><span class="line">   *   MySqlDataDictionary</span><br><span class="line">   *   SqlServerDataDictionary</span><br><span class="line">   *   PostgreSqlDataDictionary</span><br><span class="line">   *   OracleDataDictionary</span><br><span class="line">   *   DB2DataDictionary</span><br><span class="line">列举了MySql实现</span><br><span class="line">@Slf4j</span><br><span class="line">public class MySqlDataDictionary extends AbstractDataDictionary &#123;</span><br><span class="line"></span><br><span class="line">    @Autowired</span><br><span class="line">    private MySqlConnection mySqlConnection;</span><br><span class="line"></span><br><span class="line">    @Autowired</span><br><span class="line">    private DataDictionaryDataSource dataSource;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public List getTableInfo(String tableNames) &#123;</span><br><span class="line">        return getTableList(mySqlConnection.getConnection(),dataSource,tableNames);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8%E6%9C%8D%E5%8A%A1%E5%A4%84%E7%90%86%E7%B1%BB.png" alt></p>
+</li>
+</ul>
+<h4 id="6、创建前端模板"><a href="#6、创建前端模板" class="headerlink" title="6、创建前端模板"></a>6、创建前端模板</h4><ol>
+<li><p>前端显示模板使用freemarker</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">引入依赖</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">   &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">   &lt;artifactId&gt;spring-boot-starter-freemarker&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>因为使用freemarker，所以需要在resoures创建templates文件夹来存放模板文件<br><img src="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8%E6%A8%A1%E6%9D%BF%E5%AD%98%E6%94%BE%E4%BD%8D%E7%BD%AE.png" alt></p>
+</li>
+<li><p>前端页面显示使用了Vue.js框架，组件使用了ElementUI框架实现<br>数据请求使用axios.js<br><img src="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6%E6%8A%80%E6%9C%AF.png" alt></p>
+</li>
+<li><p>创建Controller类实现数据访问，启动SpringBoot</p>
+</li>
+</ol>
+<h4 id="7、文件服务实现"><a href="#7、文件服务实现" class="headerlink" title="7、文件服务实现"></a>7、文件服务实现</h4><ol>
+<li><p>主要实现了PDF预览下载，Word文档下载以及Html显示</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">既然要打印PDF就不得不用到第三方工具itextpdf</span><br><span class="line">引入依赖</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;com.itextpdf&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;itextpdf&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line">&lt;!-- https://mvnrepository.com/artifact/com.itextpdf/itext-asian --&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;com.itextpdf&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;itext-asian&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建一个抽象的AbstractFileServiceFactory类来配置默认的模板存放位置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">AbstractFileServiceFactor类实现了FileServiceFactory</span><br><span class="line">static &#123;</span><br><span class="line">    // setEncoding这个方法一定要设置国家及其编码，不然在ftl中的中文在生成html后会变成乱码</span><br><span class="line">    configuration.setDefaultEncoding(ENCODING);</span><br><span class="line">    //设置模板所在文件夹</span><br><span class="line">    configuration.setClassForTemplateLoading(AbstractFileServiceFactory.class,&quot;/templates&quot;);</span><br><span class="line">    // 设置对象的包装器</span><br><span class="line">    configuration.setObjectWrapper(new DefaultObjectWrapper(Configuration.DEFAULT_INCOMPATIBLE_IMPROVEMENTS));</span><br><span class="line">    // 设置异常处理器,这样的话就可以$&#123;a.b.c.d&#125;即使没有属性也不会出错</span><br><span class="line">    configuration.setTemplateExceptionHandler(TemplateExceptionHandler.IGNORE_HANDLER);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">创建需要生成文件的服务类，并且继承AbstractFileServiceFactory</span><br><span class="line">*   PdfFileService</span><br><span class="line">*   WordFileService</span><br><span class="line">*   HtmlFileService</span><br><span class="line">这里主要是要自己设计一个word模板,讲一下步骤，其实网上也很多介绍的。</span><br><span class="line">1.  创建一个word文档，标志好变量位置如：$&#123;dataBaseName&#125;</span><br><span class="line">2.  将word另存为xml文件，查看xml文件配置好的变量符号是否被分割，</span><br><span class="line">    如果被分割，需要进行调整，网上也有一些说明，通过文本复制到Word</span><br><span class="line">    中，可以避免被分割，其实还是会存在这个现象，后面我发现要将Word</span><br><span class="line">    中不能识别的单词的～进行忽略，生成的xml的变量符号才不会被分割。</span><br><span class="line">3.  格式化xml文件，文件重命名为ftl格式</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>至此，该工具基本完成，然后进行测试，打包，上线。</p>
+</li>
+</ol>
+<h4 id="8、最终结果"><a href="#8、最终结果" class="headerlink" title="8、最终结果"></a>8、最终结果</h4><ol>
+<li>登录页面：<br><img src="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8%E9%A6%96%E9%A1%B5.png" alt></li>
+<li>显示页面：<br><img src="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8%E6%98%BE%E7%A4%BA%E9%A1%B5%E9%9D%A2.png" alt></li>
+<li>下载页面：<br><img src="https://raw.githubusercontent.com/sdcxy/cdn_repository/master/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8/%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8pdf%E9%A2%84%E8%A7%88%E9%A1%B5%E9%9D%A2.png" alt>   </li>
+<li>源码地址：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/sdcxy/tools</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/wechat-qcode.jpg" alt="sdcxy wechat" style="width: 200px; max-width: 100%;">
+    <div>欢迎您扫一扫上面的微信公众号，关注我的公众号！</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="sdcxy 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="sdcxy 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    sdcxy
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://www.sdcxy.cn/2019/10/20/数据字典/" title="数据字典">https://www.sdcxy.cn/2019/10/20/数据字典/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+    <!--  添加文章结尾说明  -->
+    <div>
+      
+        <div>
+    <!--  新增的 --添加文章结尾说明  -->
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+      
+    </div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/数据字典/" rel="tag"><i class="fa fa-tag"> 数据字典</i></a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/10/11/mybatis-plus源码解析一/" rel="next" title="mybatis-plus源码解析一">
+                <i class="fa fa-chevron-left"></i> mybatis-plus源码解析一
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="sdcxy">
+            
+              <p class="site-author-name" itemprop="name">sdcxy</p>
+              <p class="site-description motion-element" itemprop="description">Java/Vue.js学习笔记</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/sdcxy" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:2378101302@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#工作经验分享-—-数据字典"><span class="nav-number">1.</span> <span class="nav-text">工作经验分享 — 数据字典</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据字典（Data-Dictionary）"><span class="nav-number">1.0.1.</span> <span class="nav-text">数据字典（Data Dictionary）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、什么是数据字典？"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">1、什么是数据字典？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、开发前准备"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">2、开发前准备</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、如何实现"><span class="nav-number">1.0.1.3.</span> <span class="nav-text">3、如何实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、开始开发"><span class="nav-number">1.0.1.4.</span> <span class="nav-text">4、开始开发</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、数据库连接"><span class="nav-number">1.0.1.5.</span> <span class="nav-text">4、数据库连接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、获取数据库表结构信息"><span class="nav-number">1.0.1.6.</span> <span class="nav-text">5、获取数据库表结构信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6、创建前端模板"><span class="nav-number">1.0.1.7.</span> <span class="nav-text">6、创建前端模板</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7、文件服务实现"><span class="nav-number">1.0.1.8.</span> <span class="nav-text">7、文件服务实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8、最终结果"><span class="nav-number">1.0.1.9.</span> <span class="nav-text">8、最终结果</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">sdcxy</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">8.7k</span>
+  
+</div>
+
+
+
+
+
+
+<!-- 隐藏主题默认底部 -->
+<!--
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+-->
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'ojndKHwM4k1qwxF1UUKPpVoM-gzGzoHsz',
+        appKey: 'EDQo1yQc9KyelM7JzSPOQhjB',
+        placeholder: '请留下你宝贵的意见!!!',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("ojndKHwM4k1qwxF1UUKPpVoM-gzGzoHsz", "EDQo1yQc9KyelM7JzSPOQhjB");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
