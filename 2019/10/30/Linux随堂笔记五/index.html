@@ -74,7 +74,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="linux,">
 
 
 
@@ -87,14 +87,28 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="网易云歌单">
-<meta property="og:url" content="https://www.sdcxy.cn/music/index.html">
+<meta name="description" content="linux 学习笔记  — nginx安装">
+<meta name="keywords" content="linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux随堂笔记五">
+<meta property="og:url" content="https://www.sdcxy.cn/2019/10/30/Linux随堂笔记五/index.html">
 <meta property="og:site_name" content="今天学习了吗?">
+<meta property="og:description" content="linux 学习笔记  — nginx安装">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-28T03:52:42.406Z">
+<meta property="og:image" content="https://www.sdcxy.cn/2019/10/30/Linux随堂笔记五/nginx%E4%B8%8B%E8%BD%BD.png">
+<meta property="og:image" content="https://www.sdcxy.cn/2019/10/30/Linux随堂笔记五/nginx%E8%A7%A3%E5%8E%8B.png">
+<meta property="og:image" content="https://www.sdcxy.cn/2019/10/30/Linux随堂笔记五/nginx%E8%A7%A3%E5%8E%8B%E5%90%8E.png">
+<meta property="og:image" content="https://www.sdcxy.cn/2019/10/30/Linux随堂笔记五/configure%E5%AE%89%E8%A3%85.png">
+<meta property="og:image" content="https://www.sdcxy.cn/2019/10/30/Linux随堂笔记五/make.png">
+<meta property="og:image" content="https://www.sdcxy.cn/2019/10/30/Linux随堂笔记五/make%20insatll.png">
+<meta property="og:image" content="https://www.sdcxy.cn/2019/10/30/Linux随堂笔记五/%E5%90%AF%E5%8A%A8nginx%E6%8A%A5%E9%94%99.png">
+<meta property="og:image" content="https://www.sdcxy.cn/2019/10/30/Linux随堂笔记五/nginx%E4%BF%AE%E6%94%B9%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.png">
+<meta property="og:image" content="https://www.sdcxy.cn/2019/10/30/Linux随堂笔记五/%E5%90%AF%E5%8A%A8nginx.png">
+<meta property="og:updated_time" content="2019-10-30T08:27:28.532Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="网易云歌单">
+<meta name="twitter:title" content="Linux随堂笔记五">
+<meta name="twitter:description" content="linux 学习笔记  — nginx安装">
+<meta name="twitter:image" content="https://www.sdcxy.cn/2019/10/30/Linux随堂笔记五/nginx%E4%B8%8B%E8%BD%BD.png">
 
 
 
@@ -124,13 +138,13 @@
 
 
 
-  <link rel="canonical" href="https://www.sdcxy.cn/music/">
+  <link rel="canonical" href="https://www.sdcxy.cn/2019/10/30/Linux随堂笔记五/">
 
 
 
 
 
-  <title>网易云歌单 | 今天学习了吗?</title>
+  <title>Linux随堂笔记五 | 今天学习了吗?</title>
   
 
 
@@ -140,9 +154,6 @@
 
 
 
-<link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
-<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
-<script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -291,35 +302,349 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.sdcxy.cn/2019/10/30/Linux随堂笔记五/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="sdcxy">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="今天学习了吗?">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">网易云歌单</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
+          <h1 class="post-title" itemprop="name headline">Linux随堂笔记五</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-30T14:14:24+08:00">
+                2019-10-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-    <div id="aplayer-ruKChfIB" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="2471654177" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="440px" data-preload="auto" data-theme="#ad7a86"></div>
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux随笔/" itemprop="url" rel="index">
+                    <span itemprop="name">linux随笔</span>
+                  </a>
+                </span>
 
-        
-      </div>
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/10/30/Linux随堂笔记五/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/10/30/Linux随堂笔记五/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2019/10/30/Linux随堂笔记五/" class="leancloud_visitors" data-flag-title="Linux随堂笔记五">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  773字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  3分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h1 id="linux-学习笔记-—-nginx安装"><a href="#linux-学习笔记-—-nginx安装" class="headerlink" title="linux 学习笔记  — nginx安装"></a>linux 学习笔记  — nginx安装</h1><a id="more"></a>
+
+<h2 id="1-下载nginx"><a href="#1-下载nginx" class="headerlink" title="1.下载nginx"></a>1.下载nginx</h2><ul>
+<li>下载nginx<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://nginx.org/download/nginx-1.15.12.tar.gz</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p><img src="/2019/10/30/Linux随堂笔记五/nginx%E4%B8%8B%E8%BD%BD.png" alt="logo"></p>
+<h2 id="2-解压nginx"><a href="#2-解压nginx" class="headerlink" title="2. 解压nginx"></a>2. 解压nginx</h2><ul>
+<li>解压nginx<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zvxf nginx-1.15.12.tar.gz</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p><img src="/2019/10/30/Linux随堂笔记五/nginx%E8%A7%A3%E5%8E%8B.png" alt="logo"><br><img src="/2019/10/30/Linux随堂笔记五/nginx%E8%A7%A3%E5%8E%8B%E5%90%8E.png" alt="logo"></p>
+<h2 id="3-安装"><a href="#3-安装" class="headerlink" title="3. 安装"></a>3. 安装</h2><ul>
+<li><p>先要安装先决条件（参考该博主）<br>nginx 安装时候报错：make: *** No rule to make target <code>build&#39;, needed by</code>default’. Stop.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">    </span><br><span class="line">博文地址：https://www.cnblogs.com/zrbfree/p/6419043.html</span><br><span class="line">根据系统版本安装：</span><br><span class="line">1、GCC——GNU编译器集合（GCC可以使用默认包管理器的仓库（repositories）来安装，包管理器的选择依赖于你使用的Linux发布版本，包管理器有不同的实现：yum是基于Red Hat的发布版本；apt用于Debian和Ubuntu；yast用于SuSE Linux等等。）</span><br><span class="line"></span><br><span class="line">    RedHat中安装GCC：</span><br><span class="line">    </span><br><span class="line">    yum install gcc</span><br><span class="line">    </span><br><span class="line">    Ubuntu中安装GCC：</span><br><span class="line">    </span><br><span class="line">    apt-get install gcc</span><br><span class="line"></span><br><span class="line">2、PCRE库（Nginx编译需要PCRE（Perl Compatible Regular Expression），因为Nginx的Rewrite模块和HTTP核心模块会使用到PCRE正则表达式语法。这里需要安装两个安装包pcre和pcre-devel。第一个安装包提供编译版本的库，而第二个提供开发阶段的头文件和编译项目的源代码，这正是我们需要的理由。）</span><br><span class="line"></span><br><span class="line">    RedHat中安装PCRE：</span><br><span class="line">    </span><br><span class="line">    yum install pcre pcre-devel</span><br><span class="line">    </span><br><span class="line">    Ubuntu中安装PCRE：</span><br><span class="line">    </span><br><span class="line">    apt-get install libpcre3 libpcre3-dev</span><br><span class="line"></span><br><span class="line">3、zlib库（zlib库提供了开发人员的压缩算法，在Nginx的各种模块中需要使用gzip压缩。如同安装PCRE一样，同样需要安装库和它的源代码：zlib和zlib-devel。）</span><br><span class="line"></span><br><span class="line">    RedHat中安装zlib：</span><br><span class="line">    </span><br><span class="line">    yum install zlib zlib-devel</span><br><span class="line">    </span><br><span class="line">    Ubuntu中安装zlib：</span><br><span class="line">    </span><br><span class="line">    apt-get install zlib1g zlib1g-dev</span><br><span class="line"></span><br><span class="line">4、OpenSSL库（在Nginx中，如果服务器提供安全网页时则会用到OpenSSL库，我们需要安装库文件和它的开发安装包（openssl和openssl-devel）。）</span><br><span class="line"></span><br><span class="line">    RedHat中安装OpenSSL：</span><br><span class="line">    </span><br><span class="line">    yum install openssl openssl-devel</span><br><span class="line">    </span><br><span class="line">    Ubuntu中安装OpenSSL：（注：Ubuntu14.04的仓库中没有发现openssl-dev）：</span><br><span class="line">    </span><br><span class="line">    apt-get install openssl openssl-dev</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">./configure \</span><br><span class="line">--prefix=/usr/local/nginx \</span><br><span class="line">--pid-path=/var/run/nginx/nginx.pid \</span><br><span class="line">--lock-path=/var/lock/nginx.lock \</span><br><span class="line">--error-log-path=/var/log/nginx/error.log \</span><br><span class="line">--http-log-path=/var/log/nginx/access.log \</span><br><span class="line">--with-http_gzip_static_module \</span><br><span class="line">--http-client-body-temp-path=/var/temp/nginx/client \</span><br><span class="line">--http-proxy-temp-path=/var/temp/nginx/proxy \</span><br><span class="line">--http-fastcgi-temp-path=/var/temp/nginx/fastcgi \</span><br><span class="line">--http-uwsgi-temp-path=/var/temp/nginx/uwsgi \</span><br><span class="line">--http-scgi-temp-path=/var/temp/nginx/scgi</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2019/10/30/Linux随堂笔记五/configure%E5%AE%89%E8%A3%85.png" alt="logo"></p>
+</li>
+<li><p>make 编译</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2019/10/30/Linux随堂笔记五/make.png" alt="logo"></p>
+</li>
+<li><p>make 安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make install</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2019/10/30/Linux随堂笔记五/make%20insatll.png" alt="logo"></p>
+</li>
+</ul>
+<h2 id="4-启动"><a href="#4-启动" class="headerlink" title="4. 启动"></a>4. 启动</h2><ul>
+<li><p>启动nginx</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/nginx/sbin/</span><br><span class="line">./nginx</span><br><span class="line">出现该拨错：[emerg] mkdir() &quot;/var/temp/nginx/client&quot; failed (2: No such file or directory)</span><br><span class="line">执行以下命令：</span><br><span class="line">sudo mkdir -p /var/temp/nginx</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2019/10/30/Linux随堂笔记五/%E5%90%AF%E5%8A%A8nginx%E6%8A%A5%E9%94%99.png" alt="logo">   </p>
+</li>
+</ul>
+<h2 id="5-修改配置文件"><a href="#5-修改配置文件" class="headerlink" title="5. 修改配置文件"></a>5. 修改配置文件</h2><ul>
+<li><p>修改监听端口</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">vi /usr/local/nginx/conf/nginx.conf</span><br><span class="line">默认为80端口 可以进修修改</span><br><span class="line">server &#123;</span><br><span class="line">        listen       9091;（修改此处端口）</span><br><span class="line">        server_name  localhost;</span><br><span class="line"></span><br><span class="line">        #charset koi8-r;</span><br><span class="line"></span><br><span class="line">        #access_log  logs/host.access.log  main;</span><br><span class="line"></span><br><span class="line">        location / &#123;</span><br><span class="line">            root   html;</span><br><span class="line">            index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        #error_page  404              /404.html;</span><br><span class="line"></span><br><span class="line">        # redirect server error pages to the static page /50x.html</span><br><span class="line">        #</span><br><span class="line">        error_page   500 502 503 504  /50x.html;</span><br><span class="line">        location = /50x.html &#123;</span><br><span class="line">            root   html;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2019/10/30/Linux随堂笔记五/nginx%E4%BF%AE%E6%94%B9%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.png" alt="logo"></p>
+</li>
+</ul>
+<h2 id="6-nginx基础命令"><a href="#6-nginx基础命令" class="headerlink" title="6. nginx基础命令"></a>6. nginx基础命令</h2><ul>
+<li><p>启动命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd usr/local/nginx/sbin</span><br><span class="line">./nginx</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>停止命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd usr/local/nginx/sbin</span><br><span class="line">./nginx -s stop</span><br><span class="line">./nginx -s quit</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重启命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd usr/local/nginx/sbin</span><br><span class="line">./nginx -s reload</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2019/10/30/Linux随堂笔记五/%E5%90%AF%E5%8A%A8nginx.png" alt="logo"></p>
+</li>
+</ul>
+<h2 id="7-部署"><a href="#7-部署" class="headerlink" title="7. 部署"></a>7. 部署</h2><ul>
+<li>nginx 部署项目<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">1.  将Vues打包的文件 dist 传输到服务器 /home/app/admin/dist/</span><br><span class="line">    vi /usr/local/nginx/conf/nginx.conf</span><br><span class="line">2.  配置路径：</span><br><span class="line">    location / &#123;</span><br><span class="line">        root   /home/app/admin/dist/;</span><br><span class="line">        index  index.html index.htm;</span><br><span class="line">    &#125;</span><br><span class="line">3.  重启服务</span><br><span class="line">    cd /usr/local/nginx/sbin</span><br><span class="line">    ./nginx -s reload</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+
       
     </div>
     
     
     
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/wechat-qcode.jpg" alt="sdcxy wechat" style="width: 200px; max-width: 100%;">
+    <div>欢迎您扫一扫上面的微信公众号，关注我的公众号！</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="sdcxy 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="sdcxy 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    sdcxy
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://www.sdcxy.cn/2019/10/30/Linux随堂笔记五/" title="Linux随堂笔记五">https://www.sdcxy.cn/2019/10/30/Linux随堂笔记五/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+    <!--  添加文章结尾说明  -->
+    <div>
+      
+        <div>
+    <!--  新增的 --添加文章结尾说明  -->
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+      
+    </div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/linux/" rel="tag"><i class="fa fa-tag"> linux</i></a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/10/30/数据字典工具/" rel="next" title="数据字典">
+                <i class="fa fa-chevron-left"></i> 数据字典
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -328,6 +653,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -348,8 +680,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -434,6 +775,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#linux-学习笔记-—-nginx安装"><span class="nav-number">1.</span> <span class="nav-text">linux 学习笔记  — nginx安装</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-下载nginx"><span class="nav-number">1.1.</span> <span class="nav-text">1.下载nginx</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-解压nginx"><span class="nav-number">1.2.</span> <span class="nav-text">2. 解压nginx</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-安装"><span class="nav-number">1.3.</span> <span class="nav-text">3. 安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-启动"><span class="nav-number">1.4.</span> <span class="nav-text">4. 启动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-修改配置文件"><span class="nav-number">1.5.</span> <span class="nav-text">5. 修改配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-nginx基础命令"><span class="nav-number">1.6.</span> <span class="nav-text">6. nginx基础命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-部署"><span class="nav-number">1.7.</span> <span class="nav-text">7. 部署</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
