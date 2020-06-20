@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Linux随堂笔记六</title>
+      <link href="/2020/06/20/Linux%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0%E5%85%AD/"/>
+      <url>/2020/06/20/Linux%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0%E5%85%AD/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="linux-学习笔记-—-redis安装"><a href="#linux-学习笔记-—-redis安装" class="headerlink" title="linux 学习笔记  — redis安装"></a>linux 学习笔记  — redis安装</h1><a id="more"></a><h2 id="1、下载redis"><a href="#1、下载redis" class="headerlink" title="1、下载redis"></a>1、下载redis</h2><ul><li>下载 redis  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://download.redis.io/releases/redis-5.0.4.tar.gz</span><br></pre></td></tr></table></figure></li></ul><h2 id="2、解压redis"><a href="#2、解压redis" class="headerlink" title="2、解压redis"></a>2、解压redis</h2><ul><li>解压redis  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf redis-5.0.4.tar.gz</span><br></pre></td></tr></table></figure></li></ul><h2 id="3、编译安装"><a href="#3、编译安装" class="headerlink" title="3、编译安装"></a>3、编译安装</h2><ul><li><p>编译</p>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">进入redis目录</span><br><span class="line">    cd redis-5.0.4</span><br><span class="line">编译</span><br><span class="line">    make</span><br></pre></td></tr></table></figure></li><li><p>安装</p>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">安装</span><br><span class="line">    make PREFIX=/usr/local/redis install</span><br></pre></td></tr></table></figure></li></ul><h2 id="4、移动文件并修改配置文件"><a href="#4、移动文件并修改配置文件" class="headerlink" title="4、移动文件并修改配置文件"></a>4、移动文件并修改配置文件</h2><ul><li><p>拷贝文件</p>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">拷贝redis.conf到安装目录</span><br><span class="line">     cp redis.conf /usr/local/redis</span><br></pre></td></tr></table></figure></li><li><p>编辑配置文件</p>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">进入目录</span><br><span class="line">    cd /usr/local/redis/</span><br><span class="line">编辑redis.conf</span><br><span class="line">    vim redis.conf</span><br></pre></td></tr></table></figure></li></ul><p><img src="/2020/06/20/Linux随堂笔记六/redis%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%BB%91%E5%AE%9AIP%E5%92%8C%E5%AF%86%E7%A0%81.png" alt="logo"><br><img src="/2020/06/20/Linux随堂笔记六/reids%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%AB%AF%E5%8F%A3%E9%85%8D%E7%BD%AE.png" alt="logo"><br><img src="/2020/06/20/Linux随堂笔记六/redis%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%90%8E%E5%8F%B0%E5%90%AF%E5%8A%A8.png" alt="logo"><br><img src="/2020/06/20/Linux随堂笔记六/redis%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%8C%87%E5%AE%9A%E6%95%B0%E6%8D%AE%E5%AD%98%E6%94%BE%E4%BD%8D%E7%BD%AE.png" alt="logo"></p><h2 id="5、配置redis启动-停止"><a href="#5、配置redis启动-停止" class="headerlink" title="5、配置redis启动/停止"></a>5、配置redis启动/停止</h2><ul><li><p>后台服务启动</p>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./bin/redis-server ./redis.conf</span><br></pre></td></tr></table></figure></li><li><p>查看</p>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps aux | grep redis</span><br></pre></td></tr></table></figure></li><li><p>客户端启动</p>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./bin/redis-cli --raw //处理中文乱码问题</span><br></pre></td></tr></table></figure></li><li><p>停止</p>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1、./bin/redis-cli shutdown</span><br><span class="line">2、kill -9 pid 进程</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Linux随堂笔记五</title>
       <link href="/2019/10/30/Linux%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0%E4%BA%94/"/>
       <url>/2019/10/30/Linux%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0%E4%BA%94/</url>
