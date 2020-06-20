@@ -4,7 +4,7 @@
 
 # Site
 title: 今天学习了吗?
-subtitle: 学习知识要善于思考，思考，再思考 —— 爱因斯坦
+subtitle: 学习知识要善于思考，思考，再思考
 description: Java/Vue.js学习笔记
 keywords:
 author: sdcxy
@@ -13,7 +13,7 @@ timezone:  Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://www.sdcxy.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -35,7 +35,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
