@@ -2,58 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71dcdb0a-e1f3-4038-9db5-4b74db7930b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/source/_posts/Linux随堂笔记一/JDK下载链接.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Linux随堂笔记一/JDK下载页面.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Linux随堂笔记一/JDK环境配置.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Linux随堂笔记一/linux下载jdk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Linux随堂笔记一/查询Java版本.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Linux随堂笔记二/node.js全局查看版本.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Linux随堂笔记二/node.js全局配置.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Linux随堂笔记五/configure安装.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Linux随堂笔记五/make insatll.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Linux随堂笔记五/make.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Linux随堂笔记五/nginx下载.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Linux随堂笔记五/nginx修改配置文件.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Linux随堂笔记五/nginx解压.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Linux随堂笔记五/nginx解压后.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Linux随堂笔记五/启动nginx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Linux随堂笔记五/启动nginx报错.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Linux随堂笔记四/mysql下载.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Linux随堂笔记四/mysql临时密码.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Linux随堂笔记四/mysql修改密码，设置支持远程连接.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Linux随堂笔记四/mysql启动服务.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/Linux随堂笔记四/mysql解压.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/mybatis源码分析一/引入mysql依赖.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/mybatis源码分析三/mybatis源码解析-mybatis由浅入深-获取SqlSessionFactory(1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/mybatis源码分析三/mybatis源码解析-mybatis由浅入深-获取SqlSessionFactory(10)-mybatis执行器.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/mybatis源码分析三/mybatis源码解析-mybatis由浅入深-获取SqlSessionFactory(11)-MapperProxy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/mybatis源码分析三/mybatis源码解析-mybatis由浅入深-获取SqlSessionFactory(12)-获取Mapper接口类中的方法.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/mybatis源码分析三/mybatis源码解析-mybatis由浅入深-获取SqlSessionFactory(13)-调用selectList方法.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/mybatis源码分析三/mybatis源码解析-mybatis由浅入深-获取SqlSessionFactory(14)-获取绑定的SQL语句.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/mybatis源码分析三/mybatis源码解析-mybatis由浅入深-获取SqlSessionFactory(15)-获取返回值.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/mybatis源码分析三/mybatis源码解析-mybatis由浅入深-获取SqlSessionFactory(2).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/mybatis源码分析三/mybatis源码解析-mybatis由浅入深-获取SqlSessionFactory(3).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/mybatis源码分析三/mybatis源码解析-mybatis由浅入深-获取SqlSessionFactory(4).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/mybatis源码分析三/mybatis源码解析-mybatis由浅入深-获取SqlSessionFactory(5).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/mybatis源码分析三/mybatis源码解析-mybatis由浅入深-获取SqlSessionFactory(6)-解析mappers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/mybatis源码分析三/mybatis源码解析-mybatis由浅入深-获取SqlSessionFactory(7)-解析mappers4种方式.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/mybatis源码分析三/mybatis源码解析-mybatis由浅入深-获取SqlSessionFactory(8)-获取sql.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/mybatis源码分析三/mybatis源码解析-mybatis由浅入深-获取SqlSessionFactory(9)-获取配置类的enviroment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/mybatis源码分析二/UerMapper.xml.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/mybatis源码分析二/mybatis-config全局配置.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/mybatis源码分析二/从SqlSessionFactory获取SqlSession.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/mybatis源码分析二/从xml中构建SqlSessionFactory.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/数据字典工具/前端框架技术.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/数据字典工具/数据字典pdf预览页面.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/数据字典工具/数据字典数据库连接类.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/数据字典工具/数据字典显示页面.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/数据字典工具/数据字典服务处理类.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/数据字典工具/数据字典模板存放位置.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_posts/数据字典工具/数据字典首页.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/index.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -82,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/source/_posts/Linux随堂笔记五.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="150">
+              <first_editor relative-caret-position="600">
                 <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="31" />
               </first_editor>
               <second_editor />
@@ -90,14 +39,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_posts/Linux随堂笔记六.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="263">
-                <caret line="60" column="3" lean-forward="true" selection-start-line="60" selection-start-column="3" selection-end-line="60" selection-end-column="3" />
+              <first_editor relative-caret-position="230">
+                <caret line="69" column="7" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1213">
+              <caret line="41" column="14" lean-forward="true" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -276,9 +234,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="410" />
-    <option name="y" value="62" />
+    <option name="y" value="61" />
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
@@ -392,7 +350,8 @@
       <workItem from="1572216780995" duration="1596000" />
       <workItem from="1572363491359" duration="7105000" />
       <workItem from="1572416032339" duration="7537000" />
-      <workItem from="1592665983527" duration="2604000" />
+      <workItem from="1592665983527" duration="3426000" />
+      <workItem from="1592670896807" duration="1513000" />
     </task>
     <task id="LOCAL-00001" summary="添加index.html">
       <created>1569547228558</created>
@@ -436,17 +395,23 @@
       <option name="project" value="LOCAL" />
       <updated>1569653351176</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="更新redis配置文档">
+      <created>1592670151778</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1592670151778</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143849000" />
+    <option name="totallyTimeSpent" value="146184000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="328" y="50" width="1400" height="784" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36876833" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3322325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -458,8 +423,9 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4993395" visible="true" weight="0.4417178" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4993395" visible="true" weight="0.44050992" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006605" side_tool="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3045326" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -475,7 +441,8 @@
     <MESSAGE value="优化hexo next主题" />
     <MESSAGE value="整理目录" />
     <MESSAGE value="优化next主题" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化next主题" />
+    <MESSAGE value="更新redis配置文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新redis配置文档" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/themes/next/layout/_partials/footer.swig">
@@ -599,13 +566,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/Linux学习笔记一-0.md" />
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/linux学习笔记一.md" />
     <entry file="file://$PROJECT_DIR$/source/_posts/Linux随堂笔记一/JDK下载页面.png">
       <provider selected="true" editor-type-id="images" />
@@ -657,6 +617,34 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="125">
             <caret line="5" selection-start-line="5" selection-end-line="8" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/Linux随堂笔记一.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="125">
+            <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/Linux随堂笔记五.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="600">
+            <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="31" />
           </first_editor>
           <second_editor />
         </state>
@@ -722,41 +710,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/Linux随堂笔记一.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="125">
-            <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/Linux随堂笔记五.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="150">
-            <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="31" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/Linux随堂笔记六.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="263">
-            <caret line="60" column="3" lean-forward="true" selection-start-line="60" selection-start-column="3" selection-end-line="60" selection-end-column="3" />
+          <first_editor relative-caret-position="230">
+            <caret line="69" column="7" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1213">
+          <caret line="41" column="14" lean-forward="true" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
         </state>
       </provider>
     </entry>
